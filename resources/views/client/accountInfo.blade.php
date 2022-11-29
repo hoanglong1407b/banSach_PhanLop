@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="account__avatar">
                                     <div class="account-avatar__avtbox">
-                                        <img class = "avatar" style="vertical-align: middle;width: 160px;height: 160px; border-radius: 50%;"src="{{asset('/backend/assets/img/avatars/')}}/{{$customer->customer_avatar}}" alt="{{$customer->customer_avatar}}">
+                                        <img class = "avatar" style="vertical-align: middle;width: 160px;height: 160px; border-radius: 50%;"src="{{asset('/frontend/img/account/')}}/{{$customer->customer_avatar}}" alt="{{$customer->customer_avatar}}">
                                         
                                         <input type="file" name="avatar" value="{{$customer->customer_avatar}}" aria-label="File browser example" class="account-avatar__input" >   
 

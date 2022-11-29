@@ -30,6 +30,15 @@ class DatabaseSeeder extends Seeder
                 'password' => bcrypt('1234'),
                 'customer_phone' => '0123456789',
                 'status' => '0',
+            ],
+            [
+                'customer_avatar' => 'avt.jpg',
+                'customer_name' => 'Châu Hoàng Long',
+                'email' => 'hoanglong1407b@gmail.com',
+                'customer_username' => 'hoanglong1407b',
+                'password' => bcrypt('Long1234'),
+                'customer_phone' => '0794690384',
+                'status' => '0',
             ]
         ]);
 
