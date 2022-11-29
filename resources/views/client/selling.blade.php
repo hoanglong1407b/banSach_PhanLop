@@ -7,7 +7,7 @@
                     <div class="col-3">
                         <div class="container__sidebar">
                             <div class="sidebar__box">
-                                <h2 class="sidebar__title classify__title">Side bar</h2>
+                                <h2 class="sidebar__title classify__title">Loại sách</h2>
                                 <ul class="sidebar__list">
                                     <a href="{{url('categorySelling/')}}" class="sidebar__link">Tất cả</a>
                                     @foreach ($categoryASC as $key => $value) 
@@ -16,6 +16,19 @@
                                             <a href="{{url('category/' . $value->category_id)}}" class="sidebar__link">{{$value->category_name}}</a>
                                         </li>
                                         @endif
+                                    @endforeach
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="sidebar__box">
+                                <h2 class="sidebar__title classify__title">Nhà xuất bản</h2>
+                                <ul class="sidebar__list">
+                                    <a href="{{url('categorySelling/')}}" class="sidebar__link">Tất cả</a>
+                                    @foreach ($brandASC as $key => $value) 
+                                        <li class="sidebar__item">
+                                            <a href="{{url('brand/' . $value->brand_id)}}" class="sidebar__link">{{$value->brand_name}}</a>
+                                        </li>
                                     @endforeach
                                     
                                 </ul>
