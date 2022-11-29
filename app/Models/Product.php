@@ -35,4 +35,8 @@ class Product extends Model
     {
         return $this->belongsTo('App\Models\Brand', 'brand_id', 'brand_id');
     }
+
+    public function orderdetail(){
+        return $this->hasMany('App\Models\OrderDetails');
+    }
 }

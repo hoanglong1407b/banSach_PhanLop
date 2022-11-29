@@ -8,7 +8,7 @@ class OrderDetails extends Model
 {
 	public $timestamps = true; //set time to false
 	protected $fillable = [
-		'order_code', 'product_id', 'product_name', 'product_price', 'product_sales_quantity'
+		'order_code', 'product_id', 'order_id', 'product_name', 'product_price', 'product_sales_quantity'
 	];
 	protected $primaryKey = 'order_details_id';
 	protected $table = 'tbl_order_details';
@@ -16,5 +16,10 @@ class OrderDetails extends Model
 	public function product()
 	{
 		return $this->belongsTo('App\Models\Product', 'product_id');
+	}
+
+	public function order()
+	{
+		return $this->belongsTo('App\Models\Order', 'order_id', 'order_id');
 	}
 }
