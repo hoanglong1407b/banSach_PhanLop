@@ -61,15 +61,15 @@
                                                     <div class="classify__product">
                                                         <div class="classify-product__box"> <!-- chứa các thẻ hình -->
                                                             <img src="{{asset('/frontend/img/products')}}/{{$value->product_img}}" alt="" class="classify-product__img">
-                                                            <div class="classify-product__discount">-15%</div>
+                                                            {{-- <div class="classify-product__discount">-15%</div> --}}
                                                         </div>
                                                         <div class="classify-product__info"> <!-- chứa các thẻ thông tin -->
                                                             <p class="classify-product__title">{{$value->product_name}}</p>
                                                             <p class="classify-product__author">{{$value->product_author}}</p>
                                                             <div class="classify-product__pricebox">
                                                                 <span class="classify-pricebox__lastprice">{{$value->product_price}}đ</span>
-                                                                <span class="classify-pricebox__originprice">100.000đ</span>
-                                                                <span class="classify-pricebox__discount">-15%</span>
+                                                                {{-- <span class="classify-pricebox__originprice">100.000đ</span> --}}
+                                                                {{-- <span class="classify-pricebox__discount">-15%</span> --}}
                                                             </div>
                                                         </div>
                                                     </div>
