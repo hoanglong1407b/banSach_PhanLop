@@ -45,6 +45,7 @@
                         {{-- <li class="navbar__item"><a href="#" class="navbar__link"><i class="navbar__link-icon fa-regular fa-circle-info"></i>Trợ giúp</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Tin tức</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Khuyến mãi</a></li> --}}
+                        <li class="navbar__item"><a href="#" class="navbar__link">BookGarden</a></li>
                     </ul>
                     <?php
                      $shipping_id = Session::get('shipping_id');
@@ -85,7 +86,7 @@
                 <div class="grid">
                     <!-- logo -->
                     <a href="{{URL::to('/')}}" class="header-mid__logo-link">
-                        <img src="{{asset('frontend/img/logo1.png')}}" alt="" class="header-mid__logo">
+                        <img src="{{asset('frontend/img/logo2.png')}}" alt="" class="header-mid__logo">
                     </a>
 
                     <!-- search -->
@@ -257,10 +258,8 @@
             <div class="grid">
                 <div class="row">
                     <div class="footer__intro">
-                        <h2 class="footer-intro__title">NHÀ SÁCH TRỰC TUYẾN SACHSY.COM</h2>
-                        <p class="footer-intro__content">Mua sách online tại nhà sách trực tuyến Bookbuy.vn để được cập nhật nhanh nhất các tựa sách đủ thể loại với mức giảm 15 – 35% cùng nhiều ưu đãi, quà tặng kèm. Qua nhiều năm, không chỉ là địa chỉ tin cậy để bạn mua sách trực tuyến, Bookbuy còn có quà tặng, văn phòng phẩm, vật dụng gia đình,…với chất lượng đảm bảo, chủng loại đa dạng, chế độ bảo hành đầy đủ và giá cả hợp lý từ hàng trăm thương hiệu uy tín trong và ngoài nước. Đặc biệt, bạn có thể chọn những mẫu sổ tay handmade hay nhiều món quà tặng sinh nhật độc đáo chỉ có tại Bookbuy.vn.</p>
-                        <p class="footer-intro__content">Mua sách online tại nhà sách trực tuyến Bookbuy.vn để được cập nhật nhanh nhất các tựa sách đủ thể loại với mức giảm 15 – 35% cùng nhiều ưu đãi, quà tặng kèm. Qua nhiều năm, không chỉ là địa chỉ tin cậy để bạn mua sách trực tuyến, Bookbuy còn có quà tặng, văn phòng phẩm, vật dụng gia đình,…với chất lượng đảm bảo, chủng loại đa dạng, chế độ bảo hành đầy đủ và giá cả hợp lý từ hàng trăm thương hiệu uy tín trong và ngoài nước. Đặc biệt, bạn có thể chọn những mẫu sổ tay handmade hay nhiều món quà tặng sinh nhật độc đáo chỉ có tại Bookbuy.vn.</p>
-                        <p class="footer-intro__content">Mua sách online tại nhà sách trực tuyến Bookbuy.vn để được cập nhật nhanh nhất các tựa sách đủ thể loại với mức giảm 15 – 35% cùng nhiều ưu đãi, quà tặng kèm. Qua nhiều năm, không chỉ là địa chỉ tin cậy để bạn mua sách trực tuyến, Bookbuy còn có quà tặng, văn phòng phẩm, vật dụng gia đình,…với chất lượng đảm bảo, chủng loại đa dạng, chế độ bảo hành đầy đủ và giá cả hợp lý từ hàng trăm thương hiệu uy tín trong và ngoài nước. Đặc biệt, bạn có thể chọn những mẫu sổ tay handmade hay nhiều món quà tặng sinh nhật độc đáo chỉ có tại Bookbuy.vn.</p>
+                        <h2 class="footer-intro__title">NHÀ SÁCH TRỰC TUYẾN BOOKGARDEN.COM</h2>
+                        <p class="footer-intro__content">Mua sách online tại nhà sách trực tuyến Bookgarden.vn để được cập nhật nhanh nhất các tựa sách đủ thể loại với mức giảm 15 – 35% cùng nhiều ưu đãi, quà tặng kèm. Qua nhiều năm, không chỉ là địa chỉ tin cậy để bạn mua sách trực tuyến, Bookbuy còn có quà tặng, văn phòng phẩm, vật dụng gia đình,…với chất lượng đảm bảo, chủng loại đa dạng, chế độ bảo hành đầy đủ và giá cả hợp lý từ hàng trăm thương hiệu uy tín trong và ngoài nước. Đặc biệt, bạn có thể chọn những mẫu sổ tay handmade hay nhiều món quà tặng sinh nhật độc đáo chỉ có tại Bookgarden.vn.</p>
                     </div>
                 </div>
 
@@ -271,25 +270,25 @@
                             <div class="row">   
                                 <div class="col-3">
                                     <div class="footer__box">
-                                        <h2 class="footer-box__title">HỖ TRỢ KHÁCH HÀNG</h2>
+                                        <h2 class="footer-box__title">VỀ CHÚNG TÔI</h2>
                                         <ul class="footer-box__list">
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Giới thiệu</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
+                                                <a href="" class="footer-box__link">Tin tức</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Liên hệ</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
+                                                <a href="" class="footer-box__link">Đăng ký</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Quên mật khẩu</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
+                                                <a href="" class="footer-box__link">Tài khoản</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -300,19 +299,16 @@
                                         <h2 class="footer-box__title">HỖ TRỢ KHÁCH HÀNG</h2>
                                         <ul class="footer-box__list">
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Hotline: 0933 109 009</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
+                                                <a href="" class="footer-box__link">Hướng dẫn khắc phục lỗi khi sử dụng website</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Hướng dẫn mua sách</a>
                                             </li>
                                             <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
+                                                <a href="" class="footer-box__link">Hướng dẫn thanh toán</a>
                                             </li>
                                             <li class="footer-box__item">
                                                 <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
@@ -322,7 +318,13 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <div class="footer__box">
+                                    <a href="{{URL::to('/')}}" class="footer__logo-link">
+                                        <img src="{{asset('frontend/img/logo2.png')}}" alt="" class="footer__logo">
+                                    </a>
+                                </div>
+
+                                <div class="col-3">
+                                    {{-- <div class="footer__box">
                                         <h2 class="footer-box__title">HỖ TRỢ KHÁCH HÀNG</h2>
                                         <ul class="footer-box__list">
                                             <li class="footer-box__item">
@@ -344,33 +346,7 @@
                                                 <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-3">
-                                    <div class="footer__box">
-                                        <h2 class="footer-box__title">HỖ TRỢ KHÁCH HÀNG</h2>
-                                        <ul class="footer-box__list">
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 
                             </div> 

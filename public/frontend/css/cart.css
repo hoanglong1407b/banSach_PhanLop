@@ -184,7 +184,7 @@
 
 .cart-item__update{
     font-size: 1.2rem;
-    background-color: rgb(98, 158, 255);
+    background-color: var(--primary-yellow);
     color: white;
     margin-top: 4px;
     border-radius: 2px;
@@ -195,7 +195,7 @@
 }
 
 .cart-item__update:hover{
-    background-color: rgb(64, 125, 224);
+    background-color: var(--primary-yellow-hover);
 }
 
 .cart-item__up{
@@ -213,6 +213,7 @@
     line-height: 1.4rem;
     cursor: pointer;
     padding: 6px;
+    color: var(--primary-purple);
 }
 
 .cart-item__icon:hover{

@@ -27,8 +27,8 @@ class ClientController extends Controller
 
         //home
         $productASC4 = Product::with('category')->with('brand')->where('status', 1)->orderBy('created_at', 'DESC')->limit(4)->get();
-        $productDESC4 = Product::with('category')->with('brand')->where('status', 1)->orderBy('created_at', 'ASC')->limit(4)->get();
-        $productASC8 = Product::with('category')->where('status', 1)->orderBy('product_id', 'ASC')->limit(8)->get();
+        $productDESC4 = Product::with('category')->with('brand')->where('status', 1)->where('product_featured', 1)->orderBy('created_at', 'ASC')->limit(8)->get();
+        $productASC8 = Product::with('category')->where('status', 1)->orderBy('product_id', 'DESC')->limit(8)->get();
 
 
         return view('client.home')->with(compact(

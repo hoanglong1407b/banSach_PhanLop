@@ -9,13 +9,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="{{('./frontend/img/slider/alo3.jpg')}}" class="d-block w-100" alt="...">
+                            <img src="{{('./frontend/img/slider/slide4.jpg')}}" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="{{('./frontend/img/slider/alo4.jpg')}}" class="d-block w-100" alt="...">
+                            <img src="{{('./frontend/img/slider/slide1.jpg')}}" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="{{('./frontend/img/slider/sach-moi-tu-nguyen.jpg')}}" class="d-block w-100" alt="...">
+                            <img src="{{('./frontend/img/slider/slide2.jpg')}}" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -37,7 +37,7 @@
 
        
 
-        <div class="row">
+        {{-- <div class="row">
             <div class="col">
                 <div class="classify">
                     <h2 class="classify__title">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
         <div class="row">

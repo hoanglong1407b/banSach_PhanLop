@@ -1,8 +1,9 @@
 :root{
     --text-color: #333;
-    --primary-yellow: #e49620;
-    --primary-yellow-hover: #bd8834;
-    --primary-purple: #5B435D;
+    --primary-yellow: #00a19c;
+    --primary-yellow-hover: #037e7a;
+    --primary-yellow2 : #ffdd48;
+    --primary-purple: #292983;
     --primary-gray: #938592;
     --primary-green: #1abd71;
     --primary-red:rgb(255, 36, 36);
