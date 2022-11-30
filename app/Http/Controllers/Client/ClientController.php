@@ -30,6 +30,7 @@ class ClientController extends Controller
         $productDESC4 = Product::with('category')->with('brand')->where('status', 1)->where('product_featured', 1)->orderBy('created_at', 'ASC')->limit(8)->get();
         $productASC8 = Product::with('category')->where('status', 1)->orderBy('product_id', 'DESC')->limit(4)->get();
 
+        $productBrand8 = Product::with('category')->with('brand')->where('status', 1)->where('brand_id', 1)->orderBy('created_at', 'ASC')->limit(8)->get();
 
         return view('client.home')->with(compact(
             'categoryASC',
@@ -37,6 +38,7 @@ class ClientController extends Controller
             'productDESC4',
             'productASC8',
             'brandASC',
+            'productBrand8'
         ));
     }
 

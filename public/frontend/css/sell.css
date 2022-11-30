@@ -10,6 +10,7 @@
 .app-class__container{
     background-color: var(--primary-yellow);
     padding: 10px 0; 
+    margin-bottom: 40px;
 }
 
 .app-class__container .classify{

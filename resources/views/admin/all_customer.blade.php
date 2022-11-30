@@ -47,7 +47,7 @@
                          
                           <th scope="row">{{$id++}}</th>
                          
-                          <td><div class="avatar avatar-md"><img class="avatar-img" src="{{asset('/backend/assets/img/avatars/')}}/{{$customer->customer_avatar}}" alt="{{$customer->customer_avatar}}"></div></td>
+                          <td><div class="avatar avatar-md"><img class="avatar-img" src="{{asset('/frontend/img/account/')}}/{{$customer->customer_avatar}}" alt="{{$customer->customer_avatar}}"></div></td>
                           
                           <td>{{ $customer->customer_username }}</td>
                           <td>{{ $customer->email }}</td>
