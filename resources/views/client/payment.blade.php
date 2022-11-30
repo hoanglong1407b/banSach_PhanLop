@@ -2,7 +2,7 @@
 @section('client_content')
 <script src="{{asset('frontend/js/Validator.js')}}"></script>
 
-        <div class="app__container">            
+        <div class="app__container app-container__pay">            
         
             <form id="form_payment" action="{{ URL::to('/save-checkout-customer') }}" method="POST" class="form__pay">
                 @csrf

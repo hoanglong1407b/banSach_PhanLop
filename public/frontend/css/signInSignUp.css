@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-.app__container{
+.app-container__sign{
     width: 100%;
     display: flex;
     justify-content: center;

@@ -2,7 +2,7 @@
 @section('client_content')
 <script src="{{asset('frontend/js/Validator.js')}}"></script>
 
-        <div class="app__container">  
+        <div class="app__container app-container__sign">  
             <div class="form__container">
                 
 
@@ -50,10 +50,9 @@
 
                     <form id="form_signup" action="{{ route('checkregis') }}" method="POST" class="form__sign" enctype="multipart/form-data">          
                         @csrf
-                        <div class="sign__group">
-                            <label for="fullname" class="sign-group__label"></label>
-                            <input id="fullname" name="customer_avatar" type="hidden" class="sign-group__input" value="{{asset('/backend/assets/img/avatars/1.jpg')}}">
-                        
+                        <div class="sign__group" style="display: none">
+                            <label for="fullname2" class="sign-group__label"></label>
+                            <input id="fullname2" name="customer_avatar" type="hidden" class="sign-group__input" value="{{asset('/backend/assets/img/avatars/1.jpg')}}">
                             <span class="sign-group__message"></span>
                         </div>
                         <div class="sign__group">
@@ -105,7 +104,7 @@
             </div>
         </div>
 
-        {{-- <script>
+        <script>
             Validator({
                 form: '#form_signup',
                 errorMes: '.sign-group__message',
@@ -133,7 +132,7 @@
                     Validator.isRequired('#password'),
                 ]
             })
-        </script> --}}
+        </script>
     <script src="{{asset('frontend/js/viewForm.js')}}"></script>
 
         

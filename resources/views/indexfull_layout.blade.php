@@ -27,28 +27,15 @@
 <body>
     <script src="{{asset('frontend/js/Validator.js')}}"></script>
 
-    <!-- thẻ để chứa nguyên cái page -->
     <div class="app">
-
-        <!-- 
-            HEADER 
-            Được chia làm 3 phần chính nav, mid, bottom 
-            theo thứ tự là trên, giữa, dưới
-        -->
-
         <header class="header">
-            <!-- Phần trên header -->
             <nav class="navbar">
-                <!-- Grid để nội dung nằm giữa page | width = 1200px -->
                 <div class="grid"> 
                     <ul class="navbar__list">
-                        {{-- <li class="navbar__item"><a href="#" class="navbar__link"><i class="navbar__link-icon fa-regular fa-circle-info"></i>Trợ giúp</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Tin tức</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Khuyến mãi</a></li> --}}
-                        <li class="navbar__item"><a href="#" class="navbar__link">BookGarden</a></li>
+                        <li class="navbar__item navbar_logo"><a href="#" class="navbar__link">BookGarden</a></li>
                     </ul>
                     <?php
-                     $shipping_id = Session::get('shipping_id');
+                        $shipping_id = Session::get('shipping_id');
                     ?>
                     @guest('customer')
                     @if (Route::has('loginregis'))
@@ -60,19 +47,11 @@
                     </ul>
                         @endif
                         @else
-                        
-                        
-
-                  
     
                         <ul class="navbar__list">
-                       {{-- <li><a href="{{URL::to('/logout')}}"><i class="fa fa-lock"></i> Đăng xuất</a></li> --}}
                         <li class="navbar__item"><a href="{{URL::to('/logout-customer')}}" class="navbar__link">Đăng xuất</a></li>
                         <li class="navbar__item"><a href="{{URL::to('/accountInfo')}}/{{ auth('customer')->user()->customer_id }}" class="navbar__link">{{ auth('customer')->user()->customer_name }}</a></li>
                         <li class="navbar__item"><a href="{{URL::to('/historyOrder')}}/{{ auth('customer')->user()->customer_id }}" class="navbar__link">Kiểm tra đơn hàng</a></li>
-
-    
-                        {{-- <li><a href="{{URL::to('/dang-nhap')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li> --}}
                        
                     </ul>
                       
@@ -81,15 +60,11 @@
                 </div>
             </nav>
 
-            <!-- Phần giữa header -->
             <div class="header__mid">
                 <div class="grid">
-                    <!-- logo -->
                     <a href="{{URL::to('/')}}" class="header-mid__logo-link">
                         <img src="{{asset('frontend/img/logo2.png')}}" alt="" class="header-mid__logo">
                     </a>
-
-                    <!-- search -->
                     <div class="header-mid__search-box">
                         
                         <form class="header-mid__search-box" action="search" method="GET">
@@ -104,13 +79,6 @@
                             <div class="header-mid__search-group">
                                     <input type="search" name="tukhoa" class="header-mid__search header-mid__search-box__input" placeholder="Bạn cần tìm gì?">
                                     <button class="header-mid__button header-mid__search-box__input"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                    {{-- <ul class="header-mid-search__drop">
-                                        <li class="header-mid-drop__item">Login Form in HTML & CSS</li>
-                                        <li class="header-mid-drop__item">Login Form in HTML & CSS</li>
-                                        <li class="header-mid-drop__item">Login Form in HTML & CSS</li>
-                                        <li class="header-mid-drop__item">Login Form in HTML & CSS</li>
-                                        <li class="header-mid-drop__item">Login Form in HTML & CSS</li>
-                                    </ul> --}}
                             </div>
                         </form>
 
@@ -170,28 +138,6 @@
                                             </li>  
                                             @endif 
                                         @endforeach 
-                                        
-                                        
-                                        <!-- dropdown level 2 -->
-                                        {{-- <div class="header-category__dropdown second">
-                                            <div class="header-drop__second">
-                                                <ul class="header-drop-second__list">
-                                                    <li class="header-drop-second__item">
-                                                        <a href="#" class="header-drop-second__link">alo 123123123213123alo</a>
-                                                    </li>
-                                                    <li class="header-drop-second__item">
-                                                        <a href="#" class="header-drop-second__link">alo alo</a>
-                                                    </li>
-                                                    <li class="header-drop-second__item">
-                                                        <a href="#" class="header-drop-second__link">alo alo</a>
-                                                    </li>
-
-                                                </ul>
-                                                
-                                            </div>
-                                            
-                                        </div> --}}
-                                        <!-- end dropdown level 2 -->
                                     </ul>
                                     
                                 </div>
@@ -324,29 +270,7 @@
                                 </div>
 
                                 <div class="col-3">
-                                    {{-- <div class="footer__box">
-                                        <h2 class="footer-box__title">HỖ TRỢ KHÁCH HÀNG</h2>
-                                        <ul class="footer-box__list">
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Sản phẩm & Đơn hàng: 0933 109 009</a>
-                                            </li>
-                                            <li class="footer-box__item">
-                                                <a href="" class="footer-box__link">Kỹ thuật & Bảo hành: 0909 8394 923</a>
-                                            </li>
-                                        </ul>
-                                    </div> --}}
+                                    
                                 </div>
                                 
                             </div> 
@@ -369,7 +293,6 @@
     <link href= "{{asset('backend/css/toastr.css')}}" rel="stylesheet">
     <script src="{{asset('backend/js/toastr.min.js')}}"></script>
 
-    <!-- <script src="./frontend/css/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script> -->
     {!! Toastr::message() !!}
     @include('sweetalert::alert')
    

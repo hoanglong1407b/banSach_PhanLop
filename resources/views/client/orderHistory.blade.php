@@ -37,7 +37,7 @@
                                     <table class="history__table">
                                         <tr class="history__heading history__tr">
                                            
-                                            <th class="history-heading__title history__td">Mã đơn hàng</th>
+                                            <th class="history-heading__title history__td">Mã ĐH</th>
                                             <th class="history-heading__title history__td">Thành tiền</th>
                                             
                                             <th class="history-heading__title history__td">Ngày đặt</th>

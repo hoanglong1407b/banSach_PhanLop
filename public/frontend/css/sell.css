@@ -7,6 +7,31 @@
     padding: 0 10px;
 }
 
+.app-class__container{
+    background-color: var(--primary-yellow);
+    padding: 10px 0; 
+}
+
+.app-class__container .classify{
+    background-color: var(--primary-yellow);
+}
+
+.app-class__container .classify__title{
+    color: white;
+}
+
+.app-class__container .classify__title a{
+    color: white;
+}
+
+.app-class__container .classify__title a:hover{
+    color: var(--primary-yellow2)
+}
+
+.app-class__container .classify__product{
+    background-color: white;
+}
+
 .classify__title{
     display: flex;
     justify-content: space-between;
@@ -48,6 +73,7 @@
 
 .classify__product{
     width: 100%;
+    height: 410px;
     min-height: 390px;
     cursor: pointer;
     /* border: 1px solid rgb(214, 214, 214); */
@@ -56,7 +82,7 @@
     padding-bottom:20px;
 }
 .classify__product:hover{
-    box-shadow: 1px 2px 7px rgb(184, 158, 118);
+    box-shadow: 1px 2px 7px rgb(134, 209, 178);
     transition: 0.2s;
 
 }

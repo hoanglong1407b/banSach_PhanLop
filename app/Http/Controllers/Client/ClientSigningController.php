@@ -70,29 +70,7 @@ class ClientSigningController extends Controller
     // }
     public function logincustomer(Request $request)
     {
-        // // $request->validate([
-        // //     'customer_username' => 'required',
-        // //     'password' => 'required|min:1',
-
-        // // ]);
-        // $username = $request->account_username;
-        // $password = $request->account_password;
-        // $result = DB::table('tbl_customer')->where('customer_username', $username)->where('password', $password)->first();
-
-
-        // if ($result) {
-
-        //     Session::put('customer_id', $result->customer_id);
-        //     Session::put('customer_name', $result->customer_name);
-        //     return Redirect::to('/');
-        // } else {
-        //     return back()->with('error', 'email hoặc password sai');
-        //     // echo '123';
-        // }
-        // Session::save();
-
-
-
+        
 
         $request->validate([
             'email' => 'required|email|exists:tbl_customer,email',

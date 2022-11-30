@@ -41,7 +41,7 @@
                 <div class="grid">
                     <!-- logo -->
                     <a href="{{URL::to('/')}}" class="header-mid__logo-link">
-                        <img src="{{('frontend/img/logo1.png')}}" alt="" class="header-mid__logo">
+                        <img src="{{('frontend/img/logo2.png')}}" alt="" class="header-mid__logo">
                     </a>
 
                     <!-- search -->

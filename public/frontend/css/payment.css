@@ -4,11 +4,10 @@
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.144);
 }
 
-.app__container{
+.app-container__pay{
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .form__pay{

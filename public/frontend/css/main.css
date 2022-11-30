@@ -35,8 +35,18 @@
     align-items: center;
 }
 
+.navbar__logo .navbar__link{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.navbar__logo .navbar__link:hover{
+    text-decoration: none;
+    color: #363636;
+}
+
 .navbar__link{
-    color: #777777;
+    color: #363636;
     text-decoration: none;
     display: block;
     font-size: 1.2rem;
@@ -421,7 +431,7 @@
 /* ============ FOOTER =========== */
 
 .app__footer{
-    margin-top: 100px;
+    margin-top: 150px;
     background-color: rgb(59, 59, 59);
     color: white;
     padding: 50px 0;
@@ -475,6 +485,11 @@
     font-size: 1.4rem;
     color: white
     
+}
+
+.footer-box__link:hover{
+    color: var(--primary-yellow2);    
+    text-decoration: none;
 }
 
 .footer__logo{
@@ -596,4 +611,29 @@
     background-color: var(--color);
     border: 1px solid var(--color);
     color: rgb(99, 99, 99);
+}
+
+.displayNone{
+    display: none;
+}
+
+.toast-top-right{
+}
+
+.toast{
+    background-color:var(--primary-green)!important;
+    height: 80px!important;
+    width: 400px!important;
+}
+
+.toast:hover{
+    box-shadow: none !important;
+}
+
+.toast-title{
+    font-size: 1.4rem;
+}
+
+.toast-message{
+    font-size: 1.6rem;
 }
