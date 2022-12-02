@@ -69,7 +69,7 @@ class ProductController extends Controller
             $file = $request->file('product_img');
             $filename = $file->getClientOriginalName('product_img');
             $file->move('frontend/img/products', $filename);
-            $product->product_img = './frontend/img/products/' . $filename;
+            $product->product_img = '' . $filename;
             //$product->product_img =  $filename;
         }
 
