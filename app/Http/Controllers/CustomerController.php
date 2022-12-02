@@ -122,7 +122,7 @@ class CustomerController extends Controller
         if ($request->hasFile('avatar')) {
             $file = $request->file('avatar');
             $filename = $file->getClientOriginalName('avatar');
-            $file->move('backend/assets/img/avatars', $filename);
+            $file->move('frontend/img/account', $filename);
             $cus->customer_avatar = $filename;
         }
 

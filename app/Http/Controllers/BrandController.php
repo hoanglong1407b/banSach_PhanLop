@@ -30,6 +30,7 @@ class BrandController extends Controller
         //     $file->move('/frontend/img/products/', $filename);
         //     $brand->brand_logo = $filename;
         // }
+        $brand->brand_logo = "";
 
         if ($request->brand_status) {
             $brand->brand_status = 1;
