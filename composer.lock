@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bb397318f8184b68a74c0eeba3251a1",
+    "content-hash": "d1c7ce0df4e18eb89fe1c82128704789",
     "packages": [
         {
             "name": "brian2694/laravel-toastr",
@@ -1411,27 +1411,28 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v4.0.2",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "9aa6930c8ae98b2465594d7f14f4ac131bfd6a99"
+                "reference": "05ff7ac1eb55e2dfd10edcfb18c953684d693907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/9aa6930c8ae98b2465594d7f14f4ac131bfd6a99",
-                "reference": "9aa6930c8ae98b2465594d7f14f4ac131bfd6a99",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/05ff7ac1eb55e2dfd10edcfb18c953684d693907",
+                "reference": "05ff7ac1eb55e2dfd10edcfb18c953684d693907",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^9.21",
-                "illuminate/filesystem": "^9.21",
-                "illuminate/support": "^9.21",
-                "illuminate/validation": "^9.21",
+                "illuminate/console": "^9.21|^10.0",
+                "illuminate/filesystem": "^9.21|^10.0",
+                "illuminate/support": "^9.21|^10.0",
+                "illuminate/validation": "^9.21|^10.0",
                 "php": "^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^7.0"
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
@@ -1466,9 +1467,9 @@
                 "ui"
             ],
             "support": {
-                "source": "https://github.com/laravel/ui/tree/v4.0.2"
+                "source": "https://github.com/laravel/ui/tree/v4.2.1"
             },
-            "time": "2022-09-09T18:20:35+00:00"
+            "time": "2023-02-17T09:17:24+00:00"
         },
         {
             "name": "lcobucci/clock",
@@ -3330,20 +3331,20 @@
         },
         {
             "name": "realrashid/sweet-alert",
-            "version": "v5.1.0",
+            "version": "v6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/realrashid/sweet-alert.git",
-                "reference": "fb837beaa52568fb3106d311ff3c7a7b8e543608"
+                "reference": "efe53185ddd48ef1cc22399bfdae55e83fe36bf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/realrashid/sweet-alert/zipball/fb837beaa52568fb3106d311ff3c7a7b8e543608",
-                "reference": "fb837beaa52568fb3106d311ff3c7a7b8e543608",
+                "url": "https://api.github.com/repos/realrashid/sweet-alert/zipball/efe53185ddd48ef1cc22399bfdae55e83fe36bf2",
+                "reference": "efe53185ddd48ef1cc22399bfdae55e83fe36bf2",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^5.6|^6.0|^7.0|^8.0|^9.0|^9.11|9.14.*",
+                "laravel/framework": "^5.6|^6.0|^7.0|^8.0|^9.0|^9.11|9.14.*|^10.0",
                 "php": "^7.2|^8.0"
             },
             "require-dev": {
@@ -3416,7 +3417,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-28T13:28:03+00:00"
+            "time": "2023-02-15T07:13:11+00:00"
         },
         {
             "name": "stella-maris/clock",
